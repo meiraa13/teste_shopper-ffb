@@ -1,0 +1,32 @@
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 1rem;
+    border-right: 5px double var(--color-green);
+
+    button {
+        border: 1px solid;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        color: white;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .validate-button {
+        background-color: var(--color-primary);
+    }
+
+    .update-button {
+        background-color: var(--color-green);
+    }
+
+    .disabled {
+        background-color: gray;
+        cursor: unset;
+    }
+
+
+}
