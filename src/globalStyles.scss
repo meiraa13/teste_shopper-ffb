@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Lato";
+}
+
+button {
+    background-color: unset;
+    border: none;
+    color: unset;
+    cursor: pointer;
+}
+
+
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+:root {
+    --color-header: #1E2044;
+    --color-primary: #060937;
+    --color-green: #0DAb77;
+}
+
+main {
+    display: flex;
+    gap: 1rem;
+}
