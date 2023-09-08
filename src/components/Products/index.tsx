@@ -1,13 +1,9 @@
 import { api } from "../../services/api"
+import { IProduct } from "../Form"
 import "./styles.scss"
 import { useState, useEffect} from "react"
 
-interface IProduct{
-    code:number,
-    name:string,
-    cost_price:string,
-    sales_price:string
-}
+
 
 function Products(){
     const [products, setProducts] = useState<null | IProduct[]>(null)
@@ -35,11 +31,17 @@ function Products(){
             <h1>Produtos Cadastrados</h1>
             {
                 products?
-                <ul>
+                <ul className="products-ul">
                     {products.map((product)=>(
                         <li key={product.code}>
-                            <p>Nome: {product.name}</p>
-                            <p>Preço: {product.sales_price}</p>
+                            <div>
+                                <h3>Nome</h3>
+                                <p>{product.name}</p>
+                            </div>
+                            <div>
+                                <h3>Preço</h3>
+                                <p>R$ {product.sales_price}</p>
+                            </div>
                         </li>
                     ))}
                 </ul> 

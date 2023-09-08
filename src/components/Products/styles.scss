@@ -10,17 +10,27 @@ section {
     width: 100%;
 }
 
-ul {
+.products-ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
     height: 400px;
     overflow-y: auto;
 
     li {
-        border: 1px solid;
+        border: 2px solid var(--color-primary);
         padding: 1rem;
         border-radius: 0.5rem;
         width: 40%;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
     }
 }
